@@ -1,3 +1,30 @@
+<div align="center">
+  
+  # Amazon Clone with NEXT.JS!
+  
+  <p>
+Amazon Clone with NEXT.JS! (ReactJS, Webhooks, complete Stripe Payments Checkout, Cloud Firestore database, NextAuth, Redux, Google Authentication, Add to Basket Functionality,Search for Products Functionality, Tailwind CSS, Fully Responsive with Tailwind CSS Breakpoints)
+  </p>
+</div>
+
+## Hosted Project
+- ### [Live Project](https://rushikesh-bhavsar-amazon-clone.vercel.app/)
+
+## :camera: Screenshots
+
+#### <p align="center">Amazon Login Screen</p>
+![amazon-login-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/30c359ae-1835-4254-91bc-d70e8573f3ca)
+
+#### <p align="center">Amazon Home Screen</p>
+![amazon-home-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/166e40ea-0091-45d7-845b-2f6301effd4d)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

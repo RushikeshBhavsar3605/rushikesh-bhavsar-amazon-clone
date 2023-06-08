@@ -7,7 +7,7 @@ Amazon Clone with NEXT.JS! (ReactJS, Webhooks, complete Stripe Payments Checkout
   </p>
 </div>
 
-## Hosted Project
+## :star: Hosted Project
 - ### [Live Project](https://rushikesh-bhavsar-amazon-clone.vercel.app/)
 
 ## :camera: Screenshots

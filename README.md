@@ -13,37 +13,37 @@ Amazon Clone with NEXT.JS! (ReactJS, Webhooks, complete Stripe Payments Checkout
 ## :camera: Screenshots
 
 #### <p align="center">Amazon Login Screen</p>
-![amazon-login-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/30c359ae-1835-4254-91bc-d70e8573f3ca)
+![amazon-login-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/f2712e1e-cb6e-40a9-a277-efa0def98f0c)
 
 <hr>
 
 #### <p align="center">Google Login with NextAuth Screen</p>
-![amazon-google-login](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/9fdda65b-a489-49be-9b9c-7de0d0d1affb)
+![amazon-google-login](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/f8d47411-bbde-4fad-911f-a067d0e0c6f5)
 
 <hr>
 
 #### <p align="center">Amazon Home Screen</p>
-![amazon-home-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/166e40ea-0091-45d7-845b-2f6301effd4d)
+![amazon-home-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/a5cefe84-ec48-43a7-b8d4-2286cb9fcb70)
 
 <hr>
 
 #### <p align="center">Amazon Basket Screen</p>
-![amazon-basket-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/162512c8-a634-4f73-966f-97dd5478a505)
+![amazon-basket-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/12d31fd6-475f-4562-b0f7-f55de334bb2b)
 
 <hr>
 
 #### <p align="center">Amazon Stripe Checkout Screen</p>
-![amazon-stripe-checkout](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/cdc7c96b-3fd4-4aba-9c17-2b751f0dbd51)
+![amazon-stripe-checkout](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/22678001-0cef-4845-bfc3-651888cac456)
 
 <hr>
 
 #### <p align="center">Amazon Success Screen</p>
-![amazon-success-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/7008112f-39e1-46fe-b510-96cc03182873)
+![amazon-success-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/16ec47eb-1c79-42d6-bba5-82cedcb80f55)
 
 <hr>
 
 #### <p align="center">Amazon Order Screen</p>
-![amazon-order-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/b6933883-7271-48e3-a647-5ca04e602c71)
+![amazon-order-screen](https://github.com/RushikeshBhavsar3605/rushikesh-bhavsar-amazon-clone/assets/129877176/841cf334-9f95-4550-a6d6-38f57148876f)
 
 <hr>
 

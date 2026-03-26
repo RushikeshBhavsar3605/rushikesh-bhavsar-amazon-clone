@@ -20,7 +20,7 @@ export default async (req, res) => {
     payment_method_types: ["card"],
     shipping_options: [
       {
-        shipping_rate: "shr_1MxBHoSEQJoSDT55MqptGSNi",
+        shipping_rate: "shr_1TFFLAShx6bmU8xyh24JupVk",
       },
     ],
     shipping_address_collection: {

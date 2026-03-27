@@ -1,9 +1,9 @@
 import Header from "@/Components/Header";
 import Order from "@/Components/Order";
-import db from "@/firebase";
-import moment from "moment/moment";
+import moment from "moment";
 import { getSession, useSession } from "next-auth/react";
 import Head from "next/head";
+import clientPromise from "../lib/mongodb";
 
 function Orders({ orders }) {
   const { data: session } = useSession();
@@ -23,7 +23,7 @@ function Orders({ orders }) {
         </h1>
 
         {session ? (
-          <h2>{orders.length} Orders</h2>
+          <h2>{orders?.length} Orders</h2>
         ) : (
           <h2>Please sign in to see your orders</h2>
         )}
@@ -61,31 +61,41 @@ export async function getServerSideProps(context) {
     };
   }
 
-  const stripeOrders = await db
-    .collection("users")
-    .doc(session.user.email)
+  // MongoDB connection
+  const client = await clientPromise;
+  const db = client.db();
+
+  const mongoOrders = await db
     .collection("orders")
-    .orderBy("timestamp", "desc")
-    .get();
+    .find({ email: session.user.email })
+    .sort({ timestamp: -1 })
+    .toArray();
 
   const orders = await Promise.all(
-    stripeOrders.docs.map(async (order) => ({
-      id: order.id,
-      amount: order.data().amount,
-      amountShipping: order.data().amount_shipping,
-      images: order.data().images,
-      timestamp: moment(order.data().timestamp.toDate()).unix(),
-      items: (
-        await stripe.checkout.sessions.listLineItems(order.id, {
-          limit: 100,
-        })
-      ).data,
+    mongoOrders.map(async (order) => ({
+      id: order.order_id,
+      amount: order.amount,
+      amountShipping: order.amount_shipping,
+      images: order.images,
+      timestamp: moment(order.timestamp).unix(),
+      items: await (async () => {
+        try {
+          return (
+            await stripe.checkout.sessions.listLineItems(order.order_id, {
+              limit: 100,
+            })
+          ).data;
+        } catch (error) {
+          console.error(`Error fetching items for order ${order.order_id}:`, error.message);
+          return [];
+        }
+      })(),
     }))
   );
 
   return {
     props: {
-      orders,
+      orders: JSON.parse(JSON.stringify(orders)), // ensure data is serializable
     },
   };
 }
